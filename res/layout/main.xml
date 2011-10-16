@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    >
+    <!--
+        Note that you cannot have a circular dependency between the size of the
+        RelativeLayout and the position of its children. For example, you cannot
+        have a RelativeLayout whose height is set to WRAP_CONTENT and a child
+        set to ALIGN_PARENT_BOTTOM.
+    -->
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/square"
+                android:layout_centerInParent="true"
+                />
+            <ImageView  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+

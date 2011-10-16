@@ -1,0 +1,10 @@
+This project (will) contains personal experiment with
+various layouts in Android.
+
+
+In order to try this stuff execute the following command
+
+ $ git clone https://github.com/gipi/Layout-experiments
+ $ cd Layout-experiments
+ $ android update project -p .
+ $ ant install
